@@ -2,4 +2,4 @@
 
 [zapoucalote.com.br](https://zapoucalote.com.br)
 
-![alt text](https://zapoucalote.com.br/images/repository-open-graph-template,jpg)
+![imagem do projeto](https://zapoucalote.com.br/images/repository-open-graph-template.jpg)
