@@ -1,7 +1,7 @@
 var swiper = new Swiper(".swiper-container", {
-    slidesPerView: 6,
+    slidesPerView: 2,
     spaceBetween: 10,
-    slidesPerGroup: 2,
+    slidesPerGroup: 1,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -9,6 +9,20 @@ var swiper = new Swiper(".swiper-container", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+        },
     },
 });
 
@@ -83,4 +97,11 @@ for (var i = 0; i < youtube.length; i++) {
     });
 }
 
-new WOW().init();
+wow = new WOW({
+    boxClass: "wow", // default
+    animateClass: "animated", // default
+    offset: 0, // default
+    mobile: false, // default
+    live: true, // default
+});
+wow.init();
