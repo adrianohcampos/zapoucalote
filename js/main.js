@@ -30,8 +30,10 @@ var myModalEl = document.getElementById("exampleModalToggle2");
 myModalEl.addEventListener("shown.bs.modal", function (event) {
     var button = event.relatedTarget;
     var video = button.getAttribute("data-bs-video");
+    var time = button.getAttribute("data-bs-time") ?? "0h0m0s";
     new Twitch.Player("twitch-embed", {
         video: video,
+        time: time
     });
 });
 myModalEl.addEventListener("hidden.bs.modal", function (event) {
